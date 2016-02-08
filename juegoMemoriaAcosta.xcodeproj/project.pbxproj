@@ -47,6 +47,7 @@
 		09C112281C6849A500772D47 /* juegoMemoriaAcostaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = juegoMemoriaAcostaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C1122C1C6849A500772D47 /* juegoMemoriaAcostaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = juegoMemoriaAcostaUITests.swift; sourceTree = "<group>"; };
 		09C1122E1C6849A500772D47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09C1123A1C684EBE00772D47 /* juegoMemoriaAcosta.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = juegoMemoriaAcosta.playground; path = ../../juegoMemoriaAcosta.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 			children = (
 				09C1120C1C6849A300772D47 /* AppDelegate.swift */,
 				09C1120E1C6849A300772D47 /* ViewController.swift */,
+				09C1123A1C684EBE00772D47 /* juegoMemoriaAcosta.playground */,
 				09C112101C6849A400772D47 /* Main.storyboard */,
 				09C112131C6849A400772D47 /* Assets.xcassets */,
 				09C112151C6849A400772D47 /* LaunchScreen.storyboard */,
