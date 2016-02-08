@@ -1,0 +1,84 @@
+import UIKit
+
+
+//Crear el arreglo vacio
+var arreglo = [Int]()
+
+
+//Ciclo para llenar el arreglo desde el 0 hasta el 100
+for cont in 0 ..< 101 {
+    
+    arreglo.append(cont)
+    //Ya llenamos el arreglo
+}
+
+print(arreglo)
+
+for num in arreglo{
+    // Se lee numero por numero
+    
+    /*
+     
+     Pueden cumplirse varias condiciones a la vez. Es posible que el número sea par y divisible entre 5 o que esté dentro del rango y sea par, inpar o divisble entre cinco a la vez. 
+     Por lo tanto, defini los siguientes criterios. 
+     1. Dentro del rango y par 
+     2. Dentro del rango y divisible entre 5
+     3. Dentro del rango e impar
+     4. Par y divisible entre 5
+     5. Impar y divisble entre 5
+     6. Solo par 
+     7. Solo impar
+     */
+    
+    
+    var  actual = 0
+    // Valor que usaré para el case 
+    
+    if num > 29 && num < 41 && num%2 == 0{
+        actual = 1
+        //1. Dentro del rango y par
+    } else if num > 29 && num < 41 && num%5 == 0{
+        actual = 2
+        //2. Dentro del rango y divisible entre 5
+    } else if num > 29 && num < 41 && num%2 > 0{
+        actual = 3
+        //3. Dentro del rango e impar
+    } else if num%2 == 0 && num%5 == 0{
+        actual = 4
+        //4. Par y divisible entre 5
+    } else if num%2 > 0 && num%5 == 0{
+        actual = 5
+        // 5. Impar y divisble entre 5
+    } else if num%2 == 0{
+        actual = 6
+        // 6. Solo par
+    } else{
+        actual = 7
+        // 7. Solo impar
+    }
+
+    
+    switch actual {
+        case 1:
+        print("el numero \(num) es Par y Viva Swift!!!")
+        //print("el numero \(num) Viva Swift!!!")
+        case 2:
+        print("el numero \(num) Bingo!!! y Viva Swift!!!")
+        //print("el numero \(num) Viva Swift!!!")
+        case 3:
+        print("el numero \(num) es impar y Viva Swift")
+        //print("el numero \(num) Viva Swift!!!")
+        case 4:
+        print("el numero \(num) es Par y Bingo")
+        //print("el numero \(num) Bingo!!!")
+        case 5:
+        print("el numero \(num) es impar y Bingo")
+        case 6:
+        print("el numero \(num) es par")
+        case 7:
+        print("el numero \(num) es impar")
+        default:
+        print("no criterio")
+}
+
+}
